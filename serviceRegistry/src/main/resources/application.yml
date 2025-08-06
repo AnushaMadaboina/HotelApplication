@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  client:
+    register-with-eureka: false  # This is a server, not a client
+    fetch-registry: false
+  server:
+    enable-self-preservation: false  # Optional for dev/testing
